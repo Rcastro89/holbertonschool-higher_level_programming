@@ -1,0 +1,9 @@
+#!/bin/bash
+python3 -c "
+
+import shutil
+rout = '$PYFILE'
+rout = rout + 'c'
+shutil.copy(\"$PYFILE\", rout)
+print('Compiling {} ...'.format(rout[:-1]))
+"
