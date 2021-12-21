@@ -10,3 +10,4 @@
 | `5-print_comb2.py` | Write a program that prints numbers from 0 to 99, Numbers should be printed in ascending order, with two digits |
 | `6-print_comb3.py` | Write a program that prints all possible different combinations of two digits, The two digits must be different |
 | `7-islower.py` | Write a function that checks for lowercase character |
+| `8-uppercase.py` | Write a function that prints a string in uppercase followed by a new line. |
