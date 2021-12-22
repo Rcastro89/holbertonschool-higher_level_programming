@@ -6,10 +6,10 @@ if number > -1:
 else:
     lastdigit = ((number * -1) % 10) * -1
 if lastdigit == 0:
-    print('lastdigit digit of {:d} is {:d} and is 0'.format(number, lastdigit))
+    print('Last digit of {:d} is {:d} and is 0'.format(number, lastdigit))
 elif lastdigit > 5:
-    print('lastdigit digit of {:d} is {:d} and is greater than 5'
+    print('Last digit of {:d} is {:d} and is greater than 5'
           .format(number, lastdigit))
 else:
-    print('lastdigit digit of {:d} is {:d} and is less than 6 and not 0'
+    print('Last digit of {:d} is {:d} and is less than 6 and not 0'
           .format(number, lastdigit))
