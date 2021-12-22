@@ -15,3 +15,4 @@
 | `10-add.py` | Write a function that adds two integers and returns the result. |
 | `11-pow.py` | Write a function that computes a to the power of b and return the value. |
 | `12-fizzbuzz.py` | Write a function that prints the numbers from 1 to 100 separated by a space. |
+| `100-print_tebahpla.py` | Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line. |
