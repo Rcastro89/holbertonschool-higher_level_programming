@@ -6,4 +6,4 @@
 | `add_0.py` | Function add tha return (a + b) |
 | `0-import_add.py` | import add function |
 | `1-calculation.py` | Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result. |
-| `calculator_1.py` | Write a program that imports functions from the file calculator_1.py, does some Maths, and prints the result. |
+| `calculator_1.py` | file with math functions. |
