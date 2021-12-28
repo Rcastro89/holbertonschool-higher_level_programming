@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-from show import show1
-show1()
+__import__('os').write(1, b'#pythoniscool\n')
