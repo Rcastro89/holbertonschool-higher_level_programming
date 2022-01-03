@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
+    list_tru_fal = my_list.copy()
     if my_list:
-        list_tru_fal = my_list.copy()
         i = 0
         while i < len(my_list):
             if my_list[i] % 2 == 0:
