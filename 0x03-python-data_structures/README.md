@@ -13,3 +13,4 @@
 | `8-multiple_returns.py` | Write a function that returns a tuple with the length of a string and its first character. |
 | `9-max_integer.py` | Write a function that finds the biggest integer of a list. |
 | `10-divisible_by_2.py` | Write a function that finds all multiples of 2 in a list. |
+| `11-delete_at.py` | Write a function that deletes the item at a specific position in a list. |
