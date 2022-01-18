@@ -36,9 +36,11 @@ class Square():
         """method for print square whit #"""
         p = self.__position
         if (self.size != 0):
-            for i in range(p[0]):
-                print(" ", end='')
+            for i in range(self.position[1]):
+                print()
             for x in range(self.size):
+                for i in range(p[0]):
+                    print(" ", end='')
                 for y in range(self.size):
                     print("#", end="")
                 print()
