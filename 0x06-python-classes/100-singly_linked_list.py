@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module that create a class called Node."""
 
+
 class Node:
     """class node"""
     def __init__(self, data, next_node=None):
