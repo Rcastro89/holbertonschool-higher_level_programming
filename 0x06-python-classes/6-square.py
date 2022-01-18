@@ -4,7 +4,6 @@
 
 class Square():
     """class empty"""
-    pass
 
     def __init__(self, size=0, position=(0, 0)):
         """generate atribute private
@@ -35,20 +34,14 @@ class Square():
 
     def my_print(self):
         """method for print square whit #"""
-
+        p = self.__position
         if (self.size != 0):
-            p = self.__position
-            x = self.__size
-            while (x > 0):
-                for i in range(p[0]):
-                    print(" ", end='')
-                y = self.__size
-                while (y > 0):
+            for i in range(p[0]):
+                print(" ", end='')
+            for x in range(self.size):
+                for y in range(self.size):
                     print("#", end="")
-                    y -= 1
                 print()
-                x -= 1
-            print()
         else:
             print()
 
