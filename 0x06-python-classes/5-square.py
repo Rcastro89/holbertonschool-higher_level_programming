@@ -9,13 +9,7 @@ class Square():
     def __init__(self, size=0):
         """generate atribute private
         self: """
-
-        if(type(size) != int):
-            raise TypeError("size must be an integer")
-        elif(size < 0):
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.size = size
 
     def area(self):
         """calculate area of square"""
@@ -42,14 +36,9 @@ class Square():
         """method for print square whit #"""
 
         if (self.size != 0):
-            x = self.size
-            while (x > 0):
-                y = self.size
-                while (y > 0):
+            for x in range(self.size):
+                for y in range(self.size):
                     print("#", end="")
-                    y -= 1
                 print()
-                x -= 1
-            print()
         else:
             print()
