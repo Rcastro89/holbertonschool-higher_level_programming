@@ -64,3 +64,13 @@ class Rectangle():
             cad = cad + "\n"
         cad = cad[:-1]
         return (cad)
+
+    def __repr__(self):
+        """return str repr oficial"""
+        rep = ("Rectangle(" + str(self.__width) +
+               ", " + str(self.__height) + ")")
+        return (rep)
+
+    def __del__(self):
+        """delete object"""
+        print("Bye rectangle...")
