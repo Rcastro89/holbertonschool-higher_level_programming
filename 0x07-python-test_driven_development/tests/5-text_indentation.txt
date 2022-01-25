@@ -1,0 +1,41 @@
+================================
+Test 5-text_indentation
+================================
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("Hi, im Reinaldo")
+    Hi, im Reinaldo
+
+    >>> text_indentation("Juan.")
+    Juan.
+    <BLANKLINE>
+
+    >>> text_indentation("Hola. que mas? todo: bien.")
+    Hola.
+    <BLANKLINE>
+    que mas?
+    <BLANKLINE>
+    todo:
+    <BLANKLINE>
+    bien.
+    <BLANKLINE>
+
+    >>> text_indentation("    prueba.. con  espacios: Soy Reinaldo")
+    prueba.
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    con  espacios:
+    <BLANKLINE>
+    Soy Reinaldo
+
+    >>> text_indentation("Hola\n\nMs.")
+    Hola
+    <BLANKLINE>
+    Ms.
+    <BLANKLINE>
+
+    >>> text_indentation(69)
+    Traceback (most recent call last):
+    TypeError: text must be a string

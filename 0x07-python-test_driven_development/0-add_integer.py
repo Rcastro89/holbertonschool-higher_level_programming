@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+def add_integer(a, b=98):
+    """add two integers"""
+    if ((type(a) != int) and (type(a) != float)):
+        raise TypeError("a must be an integer")
+    if ((type(b) != int) and (type(b) != float)):
+        raise TypeError("b must be an integer")
+    a = a if type(a) == int else int(a)
+    b = b if type(b) == int else int(b)
+    return a + b
