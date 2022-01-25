@@ -59,7 +59,7 @@ class Rectangle():
         """return area print str"""
         cad = ""
         if self.__height == 0 or self.__width == 0:
-            return ("".join(mat))
+            return (cad)
         for i in range(self.__height):
             for k in range(self.__width):
                 cad = cad + "#"
