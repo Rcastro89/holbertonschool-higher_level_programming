@@ -8,3 +8,4 @@
 | `4-inherits_from.py` | Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False. |
 | `5-base_geometry.py` | Write an empty class BaseGeometry. |
 | `6-base_geometry.py` | Public instance method: def area(self): that raises an Exception with the message area() is not implemented |
+| `7-base_geometry.py` | Public instance method: def integer_validator(self, name, value): that validates value |
