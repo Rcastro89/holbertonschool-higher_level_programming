@@ -6,3 +6,4 @@
 | `1-my_list.py` | Write a class MyList that inherits from list: Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort) |
 | `3-is_kind_of_class.py` | Write a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False. |
 | `4-inherits_from.py` | Write a function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False. |
+| `5-base_geometry.py` | Write an empty class BaseGeometry. |
