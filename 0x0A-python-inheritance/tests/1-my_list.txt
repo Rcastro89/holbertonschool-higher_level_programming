@@ -33,3 +33,99 @@ Import the Class and method:
     [2, 2, 1]
     >>> j.print_sorted()
     [1, 2, 2]
+
+	>>> pepe = MyList()
+
+	>>> print(pepe)
+	[]
+
+	>>> pepe.print_sorted()
+	[]
+
+	>>> pepe = MyList()
+
+	>>> pepe.append(0)
+
+	>>> pepe.append(-1)
+
+	>>> pepe.append(-672)
+
+	>>> pepe.append(-2)
+
+	>>> print(pepe)
+	[0, -1, -672, -2]
+
+	>>> pepe.print_sorted()
+	[-672, -2, -1, 0]
+
+	>>> pepe = MyList()
+
+	>>> pepe.append(NULL)
+	Traceback (most recent call last):
+	...
+	NameError: name 'NULL' is not defined
+
+
+	>>> pepe = MyList()
+
+	>>> pepe.append(NaN)
+	Traceback (most recent call last):
+	...
+	NameError: name 'NaN' is not defined
+
+	5 - Verificamos si mandamos None
+
+	>>> pepe = MyList()
+
+	>>> pepe.append(None)
+
+	>>> print(pepe)
+	[None]
+
+	>>> pepe.print_sorted()
+	[None]
+
+	>>> pepe = MyList(["p", "e", "p", "e"])
+
+	>>> print(pepe)
+	['p', 'e', 'p', 'e']
+
+	>>> pepe.print_sorted()
+	['e', 'e', 'p', 'p']
+
+
+	>>> pepe = MyList(["pepe"])
+
+	>>> print(pepe)
+	['pepe']
+
+	>>> pepe.print_sorted()
+	['pepe']
+
+	>>> pepe = MyList([88.6, 2.02, 3.06, 1.01])
+
+	>>> print(pepe)
+	[88.6, 2.02, 3.06, 1.01]
+
+	>>> pepe.print_sorted()
+	[1.01, 2.02, 3.06, 88.6]
+
+	>>> pepe = MyList([88, "z"])
+
+	>>> print(pepe)
+	[88, 'z']
+
+	>>> pepe.print_sorted()
+	Traceback (most recent call last):
+	...
+	TypeError: '<' not supported between instances of 'str' and 'int'
+
+	>>> pepe = MyList(45)
+	Traceback (most recent call last):
+	...
+	TypeError: 'int' object is not iterable
+
+	>>> pepe = MyList(True)
+	Traceback (most recent call last):
+	...
+	TypeError: 'bool' object is not iterable
