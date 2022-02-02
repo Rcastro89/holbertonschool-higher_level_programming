@@ -11,3 +11,4 @@
 | `7-base_geometry.py` | Public instance method: def integer_validator(self, name, value): that validates value |
 | `8-rectangle.py` | Write a class Rectangle that inherits from BaseGeometry (7-base_geometry.py). |
 | `9-rectangle.py` | print() should print, and str() should return, the following rectangle description: [Rectangle]width/height |
+| `10-square.py` | Write a class Square that inherits from Rectangle (9-rectangle.py): |
