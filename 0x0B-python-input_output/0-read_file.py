@@ -6,6 +6,5 @@ def read_file(filename=""):
     """read file again"""
 
     with open(filename, "r", encoding="utf-8") as files:
-        for i in files:
-            print(i, end="")
-        print()
+        read_file = files.read()
+        print(read_file, end="")
