@@ -65,7 +65,9 @@ class Base():
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """csv"""
-        save = [(i.to_dictionary()) for i in list_objs]
+        save = []
+        if list_objs is not None and len(list_objs) > 0:
+            save = [(i.to_dictionary()) for i in list_objs]
         with open(cls.__name__ + ".csv", "w") as my_file:
             writer = csv.writer(my_file)
             for i in save:
