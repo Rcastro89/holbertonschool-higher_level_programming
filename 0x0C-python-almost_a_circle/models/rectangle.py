@@ -97,23 +97,23 @@ class Rectangle(Base):
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
-                self.__width = args[1]
+                self.width = args[1]
             if len(args) > 2:
-                self.__height = args[2]
+                self.height = args[2]
             if len(args) > 3:
-                self.__x = args[3]
+                self.x = args[3]
             if len(args) > 4:
-                self.__y = args[4]
+                self.y = args[4]
         else:
             for key, value in kwargs.items():
                 if key == "y":
-                    self.__y = value
+                    self.y = value
                 if key == "x":
-                    self.__x = value
+                    self.x = value
                 if key == "width":
-                    self.__width = value
+                    self.width = value
                 if key == "height":
-                    self.__height = value
+                    self.height = value
                 if key == "id":
                     self.id = value
 
