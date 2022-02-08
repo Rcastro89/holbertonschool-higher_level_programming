@@ -29,7 +29,8 @@ class Base():
     @classmethod
     def save_to_file(cls, list_objs):
         """save"""
-        save = [(i.to_dictionary()) for i in list_objs]
+        if list_objs is not None and len(list_objs) > 0:
+            save = [(i.to_dictionary()) for i in list_objs]
         with open(cls.__name__ + ".json", "w") as my_file:
             my_file.write(Base.to_json_string(save))
 
@@ -83,10 +84,6 @@ class Base():
                 list_dir = []
                 dict_from_csv = {}
                 for rows in reader:
-                    print(rows[0])
-                    print(rows[1])
-                    print(len(rows[0]))
-                    print(len(rows[1]))
                     if i <= var_ctr:
                         dict_from_csv[rows[0]] = int(rows[1])
                         i += 1
