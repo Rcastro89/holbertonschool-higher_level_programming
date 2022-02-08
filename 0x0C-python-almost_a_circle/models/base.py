@@ -31,8 +31,8 @@ class Base():
         """save"""
         if list_objs is not None and len(list_objs) > 0:
             save = [(i.to_dictionary()) for i in list_objs]
-        with open(cls.__name__ + ".json", "w") as my_file:
-            my_file.write(Base.to_json_string(save))
+            with open(cls.__name__ + ".json", "w") as my_file:
+                my_file.write(Base.to_json_string(save))
 
     @staticmethod
     def from_json_string(json_string):
