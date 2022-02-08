@@ -83,6 +83,10 @@ class Base():
                 list_dir = []
                 dict_from_csv = {}
                 for rows in reader:
+                    print(rows[0])
+                    print(rows[1])
+                    print(len(rows[0]))
+                    print(len(rows[1]))
                     if i <= var_ctr:
                         dict_from_csv[rows[0]] = int(rows[1])
                         i += 1
