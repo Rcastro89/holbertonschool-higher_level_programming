@@ -70,7 +70,12 @@ class Base():
     @classmethod
     def load_from_file_csv(cls):
         """Load csv"""
-        var_ctr = 5 if cls.__name__ == "Rectangle" else 4
+        if cls.__name__ == "Rectangle":
+            var_ctr = 5
+        elif cls.__name__ == "Square":
+            var_ctr = 4
+        else:
+            var_ctr = 1
         try:
             with open(cls.__name__ + ".csv", mode='r') as f:
                 reader = csv.reader(f)
