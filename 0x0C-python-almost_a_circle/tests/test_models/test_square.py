@@ -75,10 +75,10 @@ class TestSquareClass(unittest.TestCase):
     def test_update_args(self):
         """ Update with args"""
         r = Square(1, 1, 0, 0)
-        r.update(2, 2, 2, 2, 2)
+        r.update(2, 2, 2, 2)
         self.assertEqual(r.id, 2)
-        self.assertEqual(r.width, 2)
-        self.assertEqual(r.height, 2)
+        self.assertEqual(r.width, 1)
+        self.assertEqual(r.height, 1)
         self.assertEqual(r.x, 2)
         self.assertEqual(r.y, 2)
 
