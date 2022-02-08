@@ -6,6 +6,18 @@ import json
 import csv
 
 
+#!/usr/bin/python3
+"""module base"""
+
+import json
+import csv
+from re import I
+from turtle import *
+import random
+import time
+from tkinter import *
+
+
 class Base():
     """class main base"""
 
@@ -83,3 +95,102 @@ class Base():
                     res_dict[k] = int(v)
                 res.append(cls.create(**res_dict))
         return res
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """draw"""
+        color_ram = ["blue", "red", "green", "yellow", "black"]
+        color_fond = ["brown", "white", "gray"]
+        rey = Turtle()
+        rey.hideturtle()
+        rey.pensize(3)
+        setup(0.5, 0.75, None, None)
+        title("Rentangles and Squares")
+        rey.pen()
+        screensize(100, 100, random.choice(color_fond))
+        for i in list_rectangles:
+            rey.begin_fill()
+            rey.fillcolor(random.choice(color_ram))
+            rey.up()
+            rey.setposition(i.x, i.y)
+            rey.down()
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.width / 3)
+                rey.color(random.choice(color_ram))
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            rey.left(90)
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.height / 3)
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            rey.left(90)
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.width / 3)
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.dot(8, random.choice(color_ram))
+            rey.left(90)
+            screensize(100, 100, random.choice(color_fond))
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.height / 3)
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.end_fill()
+        time.sleep(3)
+        rey.clear()
+        screensize(100, 100, random.choice(color_fond))
+        for i in list_squares:
+            screensize(100, 100, random.choice(color_fond))
+            rey.begin_fill()
+            rey.fillcolor(random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            rey.up()
+            rey.setposition(i.x, i.y)
+            screensize(100, 100, random.choice(color_fond))
+            rey.down()
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            for j in range(3):
+                rey.forward(i.size / 3)
+                screensize(100, 100, random.choice(color_fond))
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            rey.left(90)
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.size / 3)
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            rey.left(90)
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.size / 3)
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.dot(8, random.choice(color_ram))
+            screensize(100, 100, random.choice(color_fond))
+            rey.left(90)
+            for j in range(3):
+                screensize(100, 100, random.choice(color_fond))
+                rey.forward(i.size / 3)
+                rey.color(random.choice(color_ram))
+                screensize(100, 100, random.choice(color_fond))
+            rey.end_fill()
+            screensize(100, 100, random.choice(color_fond))
+        onkeypress(bye, 'q')
+        listen()
+        done()
+
