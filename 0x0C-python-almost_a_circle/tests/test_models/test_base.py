@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """test"""
 import unittest
-import pep8
 import os
 
 from models.base import Base
@@ -21,12 +20,6 @@ class TestBaseClass(unittest.TestCase):
         self.assertIsNotNone(Base.__doc__)
 
     # def test_methods_docstring(self):
-
-    def test_pep8_model(self):
-        """ pep8"""
-        style = pep8.StyleGuide(quiet=True)
-        pep = style.check_files(["models/base.py"])
-        self.assertEqual(pep.total_errors, 0)
 
     def test_initialization_with_empty_id(self):
         """ ok"""
