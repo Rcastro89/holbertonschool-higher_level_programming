@@ -56,7 +56,7 @@ class Base():
                         for i in Base.from_json_string(my_file.read())])
         except Exception:
             return []
-        
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """csv"""
@@ -89,8 +89,3 @@ class Base():
                 return [cls.create(**i) for i in list_dir]
         except Exception:
             return []
-
-        
-    
-    
-
