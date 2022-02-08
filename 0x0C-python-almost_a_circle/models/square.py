@@ -57,9 +57,6 @@ class Square(Rectangle):
                     self.id = value
 
     def to_dictionary(self):
-        """dictionary"""
-        attr = ["id", "x", "size", "y"]
-        dir = {}
-        for key in attr:
-            dir[key] = getattr(self, key)
-        return dir
+        """to_dictionary
+        """
+        return {"size": self.size, "x": self.x, "y": self.y, "id": self.id}
