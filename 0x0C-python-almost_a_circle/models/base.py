@@ -91,6 +91,7 @@ class Base():
     @staticmethod
     def draw(list_rectangles, list_squares):
         """draw"""
+
         color_ram = ["blue", "red", "green", "yellow", "black"]
         color_fond = ["brown", "white", "gray"]
         rey = Turtle()
@@ -185,4 +186,3 @@ class Base():
         onkeypress(bye, 'q')
         listen()
         done()
-
