@@ -91,7 +91,7 @@ class Base():
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """draw"""
+        """draw method"""
 
         color_ram = ["blue", "red", "green", "yellow", "black"]
         color_fond = ["brown", "white", "gray"]
