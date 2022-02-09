@@ -1,14 +1,6 @@
 #!/usr/bin/python3
 """module base"""
 
-
-import json
-import csv
-
-
-#!/usr/bin/python3
-"""module base"""
-
 import json
 import csv
 from re import I
