@@ -12,10 +12,7 @@ from tkinter import *
 
 
 class Base():
-    """ Base class of all other classes in this project.
-        Attributes:
-        Methods:
-    """
+    """class main base"""
 
     __nb_objects = 0
 
@@ -52,7 +49,7 @@ class Base():
 
     @classmethod
     def create(cls, **dictionary):
-        """create file"""
+        """create"""
         if cls.__name__ == 'Rectangle':
             r = cls(1, 1)
         if cls.__name__ == 'Square':
