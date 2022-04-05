@@ -7,7 +7,7 @@ const myObject = {
 console.log(myObject);
 
 myObject.incr = function incr () {
-  myObject.value = parseInt(myObject.value) + 1;
+  myObject.value++;
 };
 
 myObject.incr();
