@@ -14,6 +14,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     session.add(State(name='Louisiana'))
+    session.commit()
     result = session.query(State).filter(State.name == 'Louisiana').all()
     if result:
         for row in result:
