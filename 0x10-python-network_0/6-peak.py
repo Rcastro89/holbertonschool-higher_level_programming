@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """modeulo to fidn peak"""
 
+
 def find_peak(list_of_integers):
     """funtion to found peak"""
     numer = None
