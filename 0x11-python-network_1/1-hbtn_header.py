@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""Escriba un script de Python que obtenga https://intranet.hbtn.io/status
+"""obtener request id
 """
-
 
 
 if __name__ == "__main__":
